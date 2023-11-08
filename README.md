@@ -21,8 +21,6 @@ The aim is to develop an application that seeks to use various stages of securit
 Conclusion : 
 
 As we see the existing voting system has many defects such as a lengthy process, time taking, not secure, bogus voting, and no security level but now we can say that our approach is more useful and secure than the existing system. Since we are using three levels of security in this proposed system the false voters can be easily identified. The facial authentication technique is very useful in identifying fraudulent voters, so we can avoid bogus votes during the election commission. The voters can cast their votes from anywhere by logging into our proposed smart voting system through the Internet.
-![image](https://github.com/ItsAshish786/B.E-Final-Year-Project-/assets/110346486/66a87072-0084-4782-9be6-10f165a47aca)
-
 
 
 <br>
