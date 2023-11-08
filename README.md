@@ -3,7 +3,7 @@ ONLINE  VOTING  SYSTEM  THROUGH  FACIAL  RECOGNITION
 <br>
 
 
-Aim & Objective 
+Aim & Objective : 
 
 The aim is to develop an application that seeks to use various stages of security authentication to enhance the election process for political party elections using the real case study, i.e. The University of Ibadan, in the end imparting an internet platform that permits all eligible electorate to workout their franchise from any region for the duration of the election period. The targets are: 
 
@@ -13,34 +13,15 @@ The aim is to develop an application that seeks to use various stages of securit
    
 3) To ease the trouble of queuing in the course of balloting duration in elections.
 
-4) 5) To save voters time by providing an online voting platform, thus, saving the trouble of going to the actual location.
+4) To save voters time by providing an online voting platform, thus, saving the trouble of going to the actual location.
+
+<br>
 
 
+Conclusion : 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+As we see the existing voting system has many defects such as a lengthy process, time taking, not secure, bogus voting, and no security level but now we can say that our approach is more useful and secure than the existing system. Since we are using three levels of security in this proposed system the false voters can be easily identified. The facial authentication technique is very useful in identifying fraudulent voters, so we can avoid bogus votes during the election commission. The voters can cast their votes from anywhere by logging into our proposed smart voting system through the Internet.
+![image](https://github.com/ItsAshish786/B.E-Final-Year-Project-/assets/110346486/66a87072-0084-4782-9be6-10f165a47aca)
 
 
 
