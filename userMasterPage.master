@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userMasterPage.master.cs" Inherits="userMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/w3mobile.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+      <div style="background-color: #FFFFCC">  <asp:Literal ID="Literal1" runat="server"></asp:Literal></div>
+    <br /> 
+    <div id="rcorners1">
+        <a href="userHome.aspx">Home</a>
+         <%--<a href="userParticipate.aspx">Participate</a>--%>
+         <a href="userPartyD.aspx">PartyD</a>
+         <%--<a href="userMakeVote.aspx">MakeVote</a>--%>
+         <a href="userViewResult.aspx">ViewResult</a>
+         
+        <a href="Default.aspx">logout</a>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+</body>
+</html>
