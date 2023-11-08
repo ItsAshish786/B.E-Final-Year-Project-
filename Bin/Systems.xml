@@ -1,0 +1,1114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Systems</name>
+    </assembly>
+    <members>
+        <member name="T:System.MSSQLServer.MSSql">
+            <summary>
+             This class use to connect with SQL Server Database.This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.#ctor(System.String,System.String)">
+            <summary>
+            create instance of SqlDatabase class
+            </summary>
+            <param name="Query">Sql Query</param>
+            <param name="TName">Table Name</param>
+            <param name="ConString">Connection String information</param>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.#ctor(System.String)">
+            <summary>
+            create new database connection
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.Connection">
+            <summary>
+            return current connection information
+            </summary>
+        </member>
+        <member name="P:System.MSSQLServer.MSSql.connection">
+            <summary>
+            return current connection information
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.Contains(System.String)">
+            <summary>
+            Determines whether an element is in the Database.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.ExecuteQuery(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.SearchRow(System.String,System.Int32)">
+            <summary>
+            Sends the commandtext to the database connection and return row.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.LoadDataTable(System.String)">
+            <summary>
+            fill and return datatable.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.GetSingleValue(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns single value.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.sqlConnection">
+            <summary>
+            return current connection
+            </summary>
+            <returns>SqlConnection</returns>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.Contain(System.String)">
+            <summary>
+            check data in table
+            </summary>
+            <param name="Query">String</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.sqlExecuteQuery(System.String)">
+            <summary>
+             Executes a Transact-SQL statement against the connection and returns no. of row affected
+            </summary>
+            <param name="Query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.sqlSearchRow(System.String,System.Int32)">
+            <summary>
+            Search data in table
+            </summary>
+            <param name="Query">sql query</param>
+            <param name="SearchCount">no. of coloumns</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.sqlLoadDataTable(System.String)">
+            <summary>
+            return datatable
+            </summary>
+            <param name="Query">sql query</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.sqlGetSingleValue(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns single value.
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.MSSql.ExcuteProcedure(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a Procedure statement against the connection and returns no. of row affected.
+            </summary>
+            <param name="ProcedureName"></param>
+            <param name="Parameres"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.MSSQLServer.SQLDBTable">
+            <summary>
+            Summary description for SQLDBTable
+            </summary>
+        </member>
+        <member name="F:System.MSSQLServer.SQLDBTable.ms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="TableName"></param>
+            <param name="DBConnection"></param>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.Insert(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.updatetext(System.String,System.String,System.String,System.String)">
+            <summary>
+            Update Text Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.updateInt(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Update Int Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.updateDouble(System.String,System.String,System.String,System.Double)">
+            <summary>
+            Update Double Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.checkValue(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.checkTwoValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to check contain two column values in table
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetValues(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetIdBaseColumn(System.String,System.String,System.String)">
+            <summary>
+            Get Single Column Value By ID
+            </summary>
+            <param name="CId"></param>
+            <param name="Id"></param>
+            <param name="CName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetLastRow(System.String,System.Int32)">
+            <summary>
+            Get Last Row of Table using coloum name
+            </summary>
+            <param name="CName"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetTwoColumnText(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Get Two Columns Value for text data
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetTable(System.String)">
+            <summary>
+            Get Full Table Data
+            </summary>
+            <param name="tname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetTableNum(System.String,System.String)">
+            <summary>
+            Get One Column Value Data Rows with number
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetTableText(System.String,System.String)">
+            <summary>
+            Get One Column Value Data Rows with Text
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetTableTwoColumnText(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.GetTableTwoColumnNumText(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MSSQLServer.SQLDBTable.DeleteRow(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.MySql.MySQLDB">
+            <summary>
+             This class use to connect with SQL Server Database.This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.#ctor(System.String,System.String)">
+            <summary>
+            create instance of SqlDatabase class
+            </summary>
+            <param name="Query">Sql Query</param>
+            <param name="TName">Table Name</param>
+            <param name="ConString">Connection String information</param>
+        </member>
+        <member name="M:System.MySql.MySQLDB.ExcuteSQL(System.String)">
+            <summary>
+            fire query on database and return no. of row affected 
+            </summary>
+            <param name="SQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.ExcuteOneSQL(System.String)">
+            <summary>
+            return only one value
+            </summary>
+            <param name="SQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.SelectSQL(System.String)">
+            <summary>
+            Excute Select Query 
+            </summary>
+            <param name="SQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.#ctor(System.String)">
+            <summary>
+            create new database connection
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.Connection">
+            <summary>
+            return current connection information
+            </summary>
+        </member>
+        <member name="P:System.MySql.MySQLDB.connection">
+            <summary>
+            return current connection information
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.Contains(System.String)">
+            <summary>
+            Determines whether an element is in the Database.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.ExecuteQuery(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns the number of rows affected.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.SearchRow(System.String,System.Int32)">
+            <summary>
+            Sends the commandtext to the database connection and return row.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.LoadDataTable(System.String)">
+            <summary>
+            fill and return datatable.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.GetSingleValue(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns single value.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.sqlConnection">
+            <summary>
+            return current connection
+            </summary>
+            <returns>SqlConnection</returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.Contain(System.String)">
+            <summary>
+            check data in table
+            </summary>
+            <param name="Query">String</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.sqlExecuteQuery(System.String)">
+            <summary>
+             Executes a Transact-SQL statement against the connection and returns no. of row affected
+            </summary>
+            <param name="Query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.sqlSearchRow(System.String,System.Int32)">
+            <summary>
+            Search data in table
+            </summary>
+            <param name="Query">sql query</param>
+            <param name="SearchCount">no. of coloumns</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.sqlLoadDataTable(System.String)">
+            <summary>
+            return datatable
+            </summary>
+            <param name="Query">sql query</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:System.MySql.MySQLDB.sqlGetSingleValue(System.String)">
+            <summary>
+            Executes a Transact-SQL statement against the connection and returns single value.
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLDB.ExcuteProcedure(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Executes a Procedure statement against the connection and returns no. of row affected.
+            </summary>
+            <param name="ProcedureName"></param>
+            <param name="Parameres"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.MySql.MySQLTable">
+            <summary>
+            Summary description for SQLDBTable
+            </summary>
+        </member>
+        <member name="F:System.MySql.MySQLTable.ms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.MySql.MySQLTable.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="TableName"></param>
+            <param name="DBConnection"></param>
+        </member>
+        <member name="M:System.MySql.MySQLTable.ExcuteSQL(System.String)">
+            <summary>
+            Excute SQL Statement and return no. of rows affected
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.ExcuteOneSQL(System.String)">
+            <summary>
+            Excute SQL Statement and return single value
+            </summary>
+            <param name="query"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:System.MySql.MySQLTable.SelectSQL(System.String)">
+            <summary>
+            Excute Select SQL Statement and return table data
+            </summary>
+            <param name="Query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.Insert(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.updatetext(System.String,System.String,System.String,System.String)">
+            <summary>
+            Update Text Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.updateInt(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Update Int Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.updateDouble(System.String,System.String,System.String,System.Double)">
+            <summary>
+            Update Double Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.checkValue(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.checkTwoValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to check contain two column values in table
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetValues(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetLastRow(System.String,System.Int32)">
+            <summary>
+            Get Last Row of Table using coloum name
+            </summary>
+            <param name="CName"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetTwoColumnText(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Get Two Columns Value for text data
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetTable(System.String)">
+            <summary>
+            Get Full Table Data
+            </summary>
+            <param name="tname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetTableNum(System.String,System.String)">
+            <summary>
+            Get One Column Value Data Rows with number
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetTableText(System.String,System.String)">
+            <summary>
+            Get One Column Value Data Rows with Text
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetTableTwoColumnText(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.GetTableTwoColumnNumText(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.MySql.MySQLTable.DeleteRow(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Systems.Cryptography.AESKeyGenerator">
+            <summary>
+            AESKeyGenerator class for high security 128 bits secure key
+            </summary>
+        </member>
+        <member name="P:Systems.Cryptography.AESKeyGenerator.HighlySecureAesAutoKey">
+            <summary>
+            128 bits auto generated key
+            </summary>
+        </member>
+        <member name="T:Systems.Cryptography.Blowfish">
+            <summary>
+            Blowfish has a 64-bit block size and a variable key length from 32 bits up to 448 bits.It is a 16-round Feistel cipher and uses large key-dependent S-boxes. In structure it resembles CAST-128, which uses fixed S-boxes
+            </summary>
+        </member>
+        <member name="M:Systems.Cryptography.Blowfish.Encrypt(System.String,System.String,System.String)">
+            <summary>
+            Encrypts a file using BlowFish Encryption algorithm.
+            </summary>
+            <param name="inputFilePath">Input File Path</param>
+            <param name="outputfilePath">Output File Path</param>
+            <param name="Key">Key</param>
+        </member>
+        <member name="M:Systems.Cryptography.Blowfish.Decrypt(System.String,System.String,System.String)">
+            <summary>
+            Decrypts a file using BlowFish Encryption algorithm.
+            </summary>
+            <param name="inputFilePath">Input File Path</param>
+            <param name="outputfilePath">Output File Path</param>
+            <param name="Key">Key</param>
+        </member>
+        <member name="T:Systems.Cryptography.BMP">
+            <summary>
+            This class Reads and Writes BMP Header
+            Right now only BitmapFileHeader is only supported
+            </summary>
+            
+        </member>
+        <member name="M:Systems.Cryptography.BMP.WriteBMPFileHeader(System.IO.BinaryWriter)">
+            <summary>
+             Writes new header
+            </summary>
+            <param name="bw">The binray writer stream</param>
+        </member>
+        <member name="M:Systems.Cryptography.Crypto.EncryptStringAES(System.String,System.String)">
+            <summary>
+            Encrypt the given string using AES.  The string can be decrypted using 
+            DecryptStringAES().  The sharedSecret parameters must match.
+            </summary>
+            <param name="plainText">The text to encrypt.</param>
+            <param name="sharedSecret">A password used to generate a key for encryption.</param>
+        </member>
+        <member name="M:Systems.Cryptography.Crypto.DecryptStringAES(System.String,System.String)">
+            <summary>
+            Decrypt the given string.  Assumes the string was encrypted using 
+            EncryptStringAES(), using an identical sharedSecret.
+            </summary>
+            <param name="cipherText">The text to decrypt.</param>
+            <param name="sharedSecret">A password used to generate a key for decryption.</param>
+        </member>
+        <member name="T:Systems.Cryptography.CryptorEngine">
+            <summary>
+            Encrypts/Decrypts data of any type and any size, using the AES or 3DES algorithms.
+            </summary>
+        </member>
+        <member name="M:Systems.Cryptography.CryptorEngine.Encrypt(System.String,System.String,System.Boolean)">
+            <summary>
+            Encrypt a string using dual encryption method. Return a encrypted cipher Text
+            </summary>
+            <param name="toEncrypt">string to be encrypted</param>
+            <param name="useHashing">use hashing? send to for extra secirity</param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.Cryptography.CryptorEngine.Decrypt(System.String,System.String,System.Boolean)">
+            <summary>
+            DeCrypt a string using dual encryption method. Return a DeCrypted clear string
+            </summary>
+            <param name="cipherString">encrypted string</param>
+            <param name="useHashing">Did you use hashing to encrypt this data? pass true is yes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.Cryptography.EncryptionManager.DecryptFiletoFile(System.String,System.String)">
+            <summary>   
+            Decrypts the input file (strInputFileName) and creates a new decrypted file (strOutputFileName)   
+            </summary>   
+            <param name="strInputFileName">input file name</param>   
+            <param name="strOutputFileName">output file name</param>   
+        </member>
+        <member name="M:Systems.Cryptography.EncryptionManager.EncryptFiletoFile(System.String,System.String)">
+            <summary>   
+            Encrypts the input file(strInputFileName) and creates a new encrypted file(strOutputFileName)   
+            </summary>   
+            <param name="strInputFileName">input file name</param>   
+            <param name="strOutputFileName">output file name</param>   
+        </member>
+        <member name="M:Systems.Cryptography.EncryptionManager.EncryptStringtoFile(System.String,System.String)">
+            <summary>   
+            Encrypts the input string and creates a new encrypted file(strOutputFileName)   
+            </summary>   
+            <param name="strInputString">input string name</param>   
+            <param name="strOutputFileName">output file name</param>   
+        </member>
+        <member name="M:Systems.Cryptography.EncryptionManager.DecryptFiletoString(System.String)">
+            <summary>   
+            Decrypts the input file (strInputFileName) and creates a new decrypted file (strOutputFileName)   
+            </summary>   
+            <param name="strInputFileName">input file name</param>   
+        </member>
+        <member name="M:Systems.Cryptography.EncryptionManager.AutoPublicKeyGenerator(System.Int32)">
+            <summary>
+            Use to generate public key 
+            </summary>
+            <param name="Size">Key Size </param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Systems.Cryptography.EncryptionManager.AutoSymmetricKeyGenerator(System.Int32)">
+            <summary>
+            Use to generate symmetric key 
+            </summary>
+            <param name="Size">Key Size </param>
+            <returns>string</returns>
+        </member>
+        <member name="T:Systems.Cryptography.Stegano">
+            <summary>
+            This class enables you to hide a test message inside a BMP and retrive it too.
+            </summary>
+        </member>
+        <member name="M:Systems.Cryptography.Stegano.HideMessage(System.String,System.String,System.String)">
+            <summary>
+             This function enabels you to hide a message insider a BMP
+            </summary>
+            <param name="inputPath">input BMP path</param>
+            <param name="outputPath">output BMP path</param>
+            <param name="message">message to hide</param>
+        </member>
+        <member name="M:Systems.Cryptography.Stegano.RetriveMessage(System.String)">
+            <summary>
+             Retrives a hidden message from a BMP for projects call 9665302573
+            </summary>
+            <param name="path">path of BMP</param>
+            <returns>the hidden message</returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.#ctor(System.String,System.String)">
+            <summary>
+            create instance of OleDbDatabase class
+            </summary>
+            <param name="TName">Table Name</param>
+            <param name="ConString">Connection String information</param>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.#ctor(System.String)">
+            <summary>
+            create new database connection
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.Connection">
+            <summary>
+            return current connection information
+            </summary>
+        </member>
+        <member name="P:Systems.MSAccess.MSAccessdb.connection">
+            <summary>
+            return current connection information
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.Contains(System.String)">
+            <summary>
+            Determines whether an element is in the Database.
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.ExecuteQuery(System.String)">
+            <summary>
+            Executes a Transact-OleDb statement against the connection and returns the number of rows affected.
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.SearchRow(System.String,System.Int32)">
+            <summary>
+            Sends the commandtext to the database connection and return row.
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.LoadDataTable(System.String)">
+            <summary>
+            fill and return datatable.
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.GetSingleValue(System.String)">
+            <summary>
+            Executes a Transact-OleDb statement against the connection and returns single value.
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.OleDbConnection">
+            <summary>
+            return current connection
+            </summary>
+            <returns>OleDbConnection</returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.Contain(System.String)">
+            <summary>
+            check data in table
+            </summary>
+            <param name="Query">String</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.OleDbExecuteQuery(System.String)">
+            <summary>
+             Executes a Transact-OleDb statement against the connection and returns no. of row affected
+            </summary>
+            <param name="Query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.OleDbSearchRow(System.String,System.Int32)">
+            <summary>
+            Search data in table
+            </summary>
+            <param name="Query">OleDb query</param>
+            <param name="SearchCount">no. of coloumns</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.OleDbLoadDataTable(System.String)">
+            <summary>
+            return datatable
+            </summary>
+            <param name="Query">OleDb query</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.OleDbGetSingleValue(System.String)">
+            <summary>
+            Executes a Transact-OleDb statement against the connection and returns single value.
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessdb.ExcuteProcedure(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            Executes a Procedure statement against the connection and returns no. of row affected.
+            </summary>
+            <param name="ProcedureName"></param>
+            <param name="Parameres"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Systems.MSAccess.MSAccessTable">
+            <summary>
+            Class Connect MSAccess Table
+            </summary>
+        </member>
+        <member name="F:Systems.MSAccess.MSAccessTable.ms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="TableName"></param>
+            <param name="DBConnection"></param>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.Insert(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.updatetext(System.String,System.String,System.String,System.String)">
+            <summary>
+            Update Text Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.updateInt(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Update Int Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.updateDouble(System.String,System.String,System.String,System.Double)">
+            <summary>
+            Update Double Value
+            </summary>
+            <param name="IdName"></param>
+            <param name="IdValue"></param>
+            <param name="cname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.checkValue(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.checkTwoValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to check contain two column values in table
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetValues(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetIdBaseColumn(System.String,System.String,System.String)">
+            <summary>
+            Get Single Column Value By ID
+            </summary>
+            <param name="CId"></param>
+            <param name="Id"></param>
+            <param name="CName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetLastRow(System.String,System.Int32)">
+            <summary>
+            Get Last Row of Table using coloum name
+            </summary>
+            <param name="CName"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetTwoColumnText(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Get Two Columns Value for text data
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetTable(System.String)">
+            <summary>
+            Get Full Table Data
+            </summary>
+            <param name="tname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetTableNum(System.String,System.String)">
+            <summary>
+            Get One Column Value Data Rows with number
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetTableText(System.String,System.String)">
+            <summary>
+            Get One Column Value Data Rows with Text
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetTableTwoColumnText(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.GetTableTwoColumnNumText(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName1"></param>
+            <param name="Value1"></param>
+            <param name="CName2"></param>
+            <param name="Value2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.MSAccess.MSAccessTable.DeleteRow(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CName"></param>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Systems.Utility.DataFile">
+            <summary>
+            Class is used to Write/Read for data file
+            </summary>
+        </member>
+        <member name="M:Systems.Utility.DataFile.WriteToFile(System.String,System.String)">
+            <summary>
+            To Write a data file
+            </summary>
+            <param name="Path"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:Systems.Utility.DataFile.ReadFile(System.String)">
+            <summary>
+            To Read a data file
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Systems.Utility.EMail">
+            <summary>
+            Electronic mail, most commonly called email or e-mail since around 1993, 
+            is a method of exchanging digital messages from an author to one or more recipients.
+            </summary>
+        </member>
+        <member name="P:Systems.Utility.EMail.To">
+            <summary>
+            Reciever Email Id
+            </summary>
+        </member>
+        <member name="P:Systems.Utility.EMail.Subject">
+            <summary>
+            Subject of email
+            </summary>
+        </member>
+        <member name="P:Systems.Utility.EMail.Body">
+            <summary>
+            Detail of email message
+            </summary>
+        </member>
+        <member name="M:Systems.Utility.EMail.Send">
+            <summary>
+            For send email
+            </summary>
+        </member>
+        <member name="M:Systems.Utility.EMail.MakeMail">
+            <summary>
+            For send email
+            </summary>
+        </member>
+        <member name="M:Systems.Utility.EMail.Send(System.String)">
+            <summary>
+            Send Email 
+            </summary>
+            <param name="File"></param>
+        </member>
+        <member name="T:Systems.Utility.EmailManagement">
+            <summary>
+            For SMTP Protocal
+            </summary>
+        </member>
+        <member name="P:Systems.Utility.EmailManagement.EmailId">
+            <summary>
+            Email Id
+            </summary>
+        </member>
+        <member name="P:Systems.Utility.EmailManagement.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="T:Systems.Utility.SecretKeys">
+            <summary>
+            auto key generation
+            </summary>
+        </member>
+        <member name="M:Systems.Utility.SecretKeys.AutoKeyGeneration(System.Int32)">
+            <summary>
+            Auto gererate key of given size.
+            </summary>
+            <param name="Size">Length of password charactor</param>
+            <returns></returns>
+        </member>
+        <member name="T:Systems.Utility.PasswordManagement">
+            <summary>
+            This class provide auto password creation service.
+            </summary>
+        </member>
+        <member name="M:Systems.Utility.PasswordManagement.AutoPasswordGeneration">
+            <summary>
+            Auto gererate password of given size.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Systems.Utility.PasswordManagement.AutoPasswordGeneration(System.Int32)">
+            <summary>
+            Auto gererate password of given size.
+            </summary>
+            <param name="Size">Length of password charactor</param>
+            <returns></returns>
+        </member>
+        <member name="T:Systems.XML.XMLREADER">
+            <summary>
+            Read xml file and convert into data table
+            </summary>
+        </member>
+        <member name="M:Systems.XML.XMLREADER.Read(System.String)">
+            <summary>
+            Read XML data and return datatable
+            </summary>
+            <param name="path">xml file path</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="T:SystemUtility.Cryptography.PasswordGenerator">
+            <summary>
+            Auto password generator class
+            </summary>
+        </member>
+        <member name="M:SystemUtility.Cryptography.PasswordGenerator.Generate">
+            <summary>
+            method to create your new password
+            </summary>
+            <returns>String Value</returns>
+        </member>
+        <member name="P:SystemUtility.Cryptography.PasswordGenerator.Exclusions">
+            <summary>
+            Specifies the set of characters to exclude in password generation.
+            </summary>
+        </member>
+        <member name="P:SystemUtility.Cryptography.PasswordGenerator.Minimum">
+            <summary>
+            Specifies the minimum length of the generated password.
+            </summary>
+        </member>
+        <member name="P:SystemUtility.Cryptography.PasswordGenerator.Maximum">
+            <summary>
+            Specifies the maximum length of the generated password.
+            </summary>
+        </member>
+        <member name="P:SystemUtility.Cryptography.PasswordGenerator.ExcludeSymbols">
+            <summary>
+            Excludes symbols from the set of characters used to generate the password
+            </summary>
+        </member>
+        <member name="P:SystemUtility.Cryptography.PasswordGenerator.RepeatCharacters">
+            <summary>
+            Controls generation of repeating characters in the generated password.
+            </summary>
+        </member>
+        <member name="P:SystemUtility.Cryptography.PasswordGenerator.ConsecutiveCharacters">
+            <summary>
+            Controls generation of consecutive characters in the generated password.
+            </summary>
+        </member>
+    </members>
+</doc>
